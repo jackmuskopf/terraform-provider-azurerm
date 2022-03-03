@@ -13,4 +13,4 @@ RUN find ./scripts -type f -print0 | xargs -0 dos2unix
 
 RUN make tools fmt build
 
-CMD make acctests SERVICE='eventgrid' TESTARGS='-run=TestAccEventGridSystemTopicEventSubscription_basic' TESTTIMEOUT='60m'
+CMD make acctests SERVICE='eventgrid' TESTARGS='-run=TestAccEventGridSystemTopicEventSubscription_deliveryProperties' TESTTIMEOUT='60m'

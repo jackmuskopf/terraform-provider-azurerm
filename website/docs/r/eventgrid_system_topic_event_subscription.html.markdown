@@ -203,15 +203,15 @@ A `delivery_property` supports the following:
 
 ~> **NOTE:** `delivery_property` blocks are only effective when using an `azure_function_endpoint`, `eventhub_endpoint_id`, `hybrid_connection_endpoint_id`, `service_bus_topic_endpoint_id`, or `webhook_endpoint` endpoint specification.
 
-* `header_name` - (Required) The name of the header to send on to the destination
+* `header_name` - (Required) The name of the header to send on to the destination.
 
-* `type` - (Required) Either `Static` or `Dynamic`
+* `type` - (Required) Either `Static` or `Dynamic`.
 
-* `value` - (Optional) If the `type` is `Static`, then provide the value to use
+* `value` - (Optional) If the `type` is `Static`, then provide the value to use.
 
 * `source_field` - (Optional) If the `type` is `Dynamic`, then provide the payload field to be used as the value. Valid source fields differ by subscription type.
 
-* `secret` - (Optional) True if the `value` is a secret and should be protected, otherwise false. If True, then this value won't be returned from Azure API calls 
+* `secret` - (Optional) Set to `true` if the `value` is a secret and should be protected, otherwise `false`. If `true` then this value won't be returned from Azure API calls.
 
 ---
 
